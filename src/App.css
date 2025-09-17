@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+body{
+  background-color: #dcca71a6;
+  color: #9b4c0c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+  font-weight: bold;
+  color: #411e02;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  border: solid #411e02;
+  background-color: #ee99d066;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover{
+  background-color: #bf4f97be;
+}
+
+h1{
+  font-size: 3em;
+}
+
+ul{
+  list-style: none;
+}
+
+.header{
+  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.head_nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 5px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_links{
+  text-decoration: none;
+  color: #9b4c0c;
+  padding: 10px;
+  border: solid #411e02;
+  border-radius: 20px;
+  background-color: #ee99d066;
+}
+
+.nav_links:hover{
+  background-color: #bf4f97be;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 75vh;
+}
+
+.todo_form{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 7%;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.todo_form div label{
+  margin-right: 10px;
+}
+
+.bottom_main{
+  width: 100%;
+  height: 93%;
+  display: flex;
+  border: 5px double #411e02;
+  background-color: #ee99d066;
+}
+
+.today_todo{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.todays_todos_todo{
+  flex: 1;
+}
+
+.todays_finished_todos{
+  flex: 1;
+}
+
+.todays_finished_todos h2{
+  text-align: center;
+}
+
+.longterm_todo{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: 5px double #411e02;
+}
+
+.weekly_main{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 75vh;
+}
+
+.this_week_tracker{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.this_week_tracker table{
+  border-collapse: collapse;
+  flex-grow: 1;
+  border-style: solid;
+  table-layout: fixed;
+  width: 100%;
+  border-color: #411e02;
+  background-color: #ee99d066;
+}
+
+.weekdays{
+  height: 15%;
+}
+
+.weekdays td p{
+  color: #411e02;
+}
+
+td{
+  border-style: dotted;
+  text-align: center;
+}
+
+.add_event{
+  height: 15%;
+  width: 20%;
+  font-size: medium;
+  margin: 15px;
+}
+
+.left_todo_thisweek{
+  flex: 1;
+  text-align: center;
+  background-color: #ee99d066;
+}
+
+.month_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 75vh;
 }
