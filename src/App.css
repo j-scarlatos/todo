@@ -1,5 +1,5 @@
 body{
-  background-color: #dcca71a6;
+  background-color: #dcca7178;
   color: #9b4c0c;
 }
 
@@ -9,7 +9,7 @@ li{
 }
 
 button{
-  border: solid #411e02;
+  border: solid #9b4c0c;
   background-color: #ee99d066;
 }
 
@@ -19,6 +19,10 @@ button:hover{
 
 h1{
   font-size: 3em;
+}
+
+h2{
+  text-decoration: underline;
 }
 
 ul{
@@ -80,7 +84,7 @@ ul{
   width: 100%;
   height: 93%;
   display: flex;
-  border: 5px double #411e02;
+  border: 6px double #9b4c0c;
   background-color: #ee99d066;
 }
 
@@ -110,7 +114,15 @@ ul{
   display: flex;
   flex-direction: column;
   flex: 1;
-  border-left: 5px double #411e02;
+  border-left: 6px double #9b4c0c;
+}
+
+.week_left_todo{
+  flex: 1;
+}
+
+.month_left_todo{
+  flex: 1;
 }
 
 .weekly_main{
@@ -137,7 +149,7 @@ ul{
   border-style: solid;
   table-layout: fixed;
   width: 100%;
-  border-color: #411e02;
+  border: 6px double #9b4c0c;
   background-color: #ee99d066;
 }
 
@@ -165,14 +177,21 @@ td{
   flex: 1;
   text-align: center;
   background-color: #ee99d066;
+  border: 6px double #9b4c0c;
 }
 
 .month_main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding-top: 10px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 75vh;
+  /* height: 75vh; */
+}
+
+.month_goals{
+  margin: 20px;
+  padding: 20px;
+  border: 6px double #9b4c0c;
+  background-color: #ee99d066;
 }

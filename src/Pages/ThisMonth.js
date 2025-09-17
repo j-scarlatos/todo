@@ -8,6 +8,9 @@ function ThisMonth() {
 
     return (
         <div class="month_main">
+            <div class="month_goals">
+                <h2>Goals for This Month</h2>
+            </div>
             <Calendar
                 onChange={setDate}
                 value={date}
